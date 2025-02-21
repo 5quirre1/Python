@@ -1,1 +1,7 @@
-# Idk just uhhh do pull requests and put random python
+# Python
+
+---
+
+## I'm just gonna be making python programs daily!!!
+
+python
