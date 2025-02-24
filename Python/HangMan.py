@@ -3,16 +3,26 @@ import random
 
 
 original_words = {
-    "apple": "A red fruit",
-    "giraffe": "A tall animal with a long neck",
-    "volcano": "A mountain that erupts lava",
+    "apple": "A red or green fruit that is sweet and crunchy",
+    "giraffe": "A tall animal with a long neck that eats leaves",
+    "volcano": "A mountain that erupts lava, ash, and gas",
     "mystery": "Something unknown or difficult to explain",
-    "ocean": "A vast body of saltwater",
-    "laptop": "A portable computer",
-    "banana": "A yellow fruit",
-    "horizon": "The line where the earth meets the sky",
-    "whisper": "Speaking very softly",
-    "galaxy": "A vast system of stars and planets",
+    "ocean": "A vast body of saltwater covering most of Earth",
+    "laptop": "A portable computer used for work, school, or games",
+    "banana": "A yellow fruit that is soft and sweet inside",
+    "horizon": "The line where the earth and sky seem to meet",
+    "whisper": "Speaking very softly so only a few people can hear",
+    "galaxy": "A huge system of stars, planets, and space dust",
+    "tornado": "A violent, spinning windstorm that can cause damage",
+    "pyramid": "A large triangular structure built in ancient times",
+    "eclipse": "When one space object blocks another from view",
+    "gravity": "The force that pulls things toward Earth's center",
+    "electricity": "A form of energy that powers lights and devices",
+    "compass": "A tool that shows direction using Earth's magnetism",
+    "fossil": "The remains of ancient plants or animals in rock",
+    "planet": "A large object in space that orbits a star",
+    "echo": "A sound that bounces back and can be heard again",
+    "desert": "A dry place with little rain and few plants",
 }
 
 
