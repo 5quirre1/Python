@@ -1,3 +1,5 @@
+# made by squirel
+
 import requests
 import time
 
