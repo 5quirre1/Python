@@ -1,6 +1,13 @@
 import os
 import requests
-import inquirer
+try:
+    import inquirer
+except ImportError:
+    os.system("pip install inquirer")
+    import inquirer
+import sys
+import time
+import threading
 
 def choose_file():
     media_extensions = ['.jpg', '.jpeg', '.png', '.gif', '.mp4', '.mp3', '.wav', '.ogg', '.flv', '.mkv']
@@ -24,9 +31,23 @@ def choose_file():
         exit(1)
     return answers['file']
 
+
+def loading_spinner():
+    spinner = ['|', '/', '-', '\\']
+    while True:
+        for symbol in spinner:
+            sys.stdout.write(f'\rUploading {symbol}')
+            sys.stdout.flush()
+            time.sleep(0.1)
+
 url = "https://feridinha.com/upload"
 
 file_path = choose_file()
+
+
+spinner_thread = threading.Thread(target=loading_spinner)
+spinner_thread.daemon = True
+spinner_thread.start()
 
 with open(file_path, 'rb') as f:
     files = {
@@ -35,8 +56,8 @@ with open(file_path, 'rb') as f:
 
     response = requests.post(url, files=files)
     if response.status_code == 200:
-        print("Success!")
+        print("\rSuccess!                 ")
         response_data = response.json()
         print("File URL:", response_data['message'])
     else:
-        print(f"Failed, error: {response.status_code}")
+        print(f"\rFailed, error: {response.status_code}             ") 
