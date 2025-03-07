@@ -144,3 +144,4 @@ if __name__ == "__main__":
     app = FaceRecognitionApp(root)
     root.protocol("WM_DELETE_WINDOW", app.close_window)
     root.mainloop()
+    
