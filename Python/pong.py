@@ -1,5 +1,5 @@
 """
-Made by Squirrel on 3/6/2025 at 6:49 PM
+Made by 5quirre1 on 3/6/2025 at 6:49 PM
 no license or copyright cause it's pong so uhh use if ya want or some shit
 """
 import os
