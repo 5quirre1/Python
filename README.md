@@ -6,5 +6,5 @@ python
 
 <!-- auto updateg -->
 ## Python programs total
-- Daily: 13 files
-- Python: 14 files
+- Daily: 13 files, 1 folders
+- Python: 14 files, 0 folders
