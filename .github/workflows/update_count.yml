@@ -30,11 +30,11 @@ jobs:
 
     - name: Commit changes
       run: |
-        git config --global user.name "GitHub Actions"
-        git config --global user.email "actions@github.com"
+        git config --global user.name "Greg"
+        git config --global user.email "greg@example.com"
         git add README.md
-        git commit -m "Update README with file counts"
-        
+        git commit -m "peak"
+
     - name: Push changes
       run: |
         git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
