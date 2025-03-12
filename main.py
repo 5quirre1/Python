@@ -22,7 +22,7 @@ def update_readme(readme_path, folder_info):
     updated_content = re.sub(
         r"## Python programs total\n(.*?)(?=\n##|\Z)",
         lambda match: "## Python programs total\n" + "\n".join(
-            [f"- {folder}: {file_count} files, {folder_count} folders" for folder, (file_count, folder_count) in folder_info.items()]
+            [f"- {folder}: {file_count} files, {folder_count} {('folder' if folder_count == 1 else 'folders')}" for folder, (file_count, folder_count) in folder_info.items()]
         ),
         readme_content,
         flags=re.DOTALL
@@ -30,7 +30,7 @@ def update_readme(readme_path, folder_info):
 
     if updated_content == readme_content:
         updated_content += "\n## Python programs total\n"
-        updated_content += "\n".join([f"- {folder}: {file_count} files, {folder_count} folders" for folder, (file_count, folder_count) in folder_info.items()])
+        updated_content += "\n".join([f"- {folder}: {file_count} files, {folder_count} {('folder' if folder_count == 1 else 'folders')}" for folder, (file_count, folder_count) in folder_info.items()])
 
     with open(readme_path, 'w') as file:
         file.write(updated_content)
