@@ -9,6 +9,9 @@ on:
       - "Python/**"
       - "README.md"
 
+permissions:
+  contents: write
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
@@ -35,4 +38,3 @@ jobs:
     - name: Push changes
       run: |
         git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
-
