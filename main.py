@@ -1,3 +1,9 @@
+"""
+Made by Squirrel (5quirre1) Gay Acorns
+
+This updates the README with the current count of the programs in the Daily folder and Python folder.
+"""
+
 import os
 
 def count_files_in_folder(folder_path):
