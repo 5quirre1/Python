@@ -8,6 +8,3 @@ python
 ## Python programs total
 - Daily: 15 files, 1 folder
 - Python: 17 files, 0 folders
-## Python programs total
-- Daily: 15 files, 1 folder
-- Python: 17 files, 0 folders
